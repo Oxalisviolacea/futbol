@@ -1,6 +1,10 @@
 require './lib/stats'
+require_relative 'hashable'
+require_relative 'groupable'
 
 class TeamStats < Stats
+  include Hashable
+  include Groupable
   attr_reader :team_data,
               :tracker
 
@@ -152,7 +156,7 @@ class TeamStats < Stats
       percent_wins
     end
     best_year = best[0].to_i
-    result = "#{best_year}201#{best_year.digits[0] + 1}"
+    "#{best_year}201#{best_year.digits[0] + 1}"
   end
 
   def worst_season(team_id)
@@ -160,7 +164,7 @@ class TeamStats < Stats
       percent_wins
     end
     worst_year = worst[0].to_i
-    result = "#{worst_year}201#{worst_year.digits[0] + 1}"
+    "#{worst_year}201#{worst_year.digits[0] + 1}"
   end
 
   def average_win_percentage(team_id)

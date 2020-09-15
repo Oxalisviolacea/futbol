@@ -1,5 +1,10 @@
 require './lib/stats'
+require_relative 'hashable'
+require_relative 'groupable'
+
 class GameTeamsStats < Stats
+  include Hashable
+  include Groupable
   attr_reader :game_teams_data,
               :tracker
 
@@ -25,12 +30,6 @@ class GameTeamsStats < Stats
       game_team.result == "TIE"
     end
     double_ties.count / 2
-  end
-
-  def group_by_team_id
-    @game_teams_stats_data.group_by do |team|
-      team.team_id
-    end
   end
 
   def games_from_season(season)

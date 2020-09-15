@@ -88,21 +88,21 @@ class StatTracker
   end
 
   def winningest_coach(season)
-    @game_teams_stats.hash_of_seasons(season)
+    @game_teams_stats.games_from_season(season)
     @game_teams_stats.group_by_coach(season)
     @game_teams_stats.coach_wins(season)
     @game_teams_stats.winningest_coach(season)
   end
 
   def worst_coach(season)
-    @game_teams_stats.hash_of_seasons(season)
+    @game_teams_stats.games_from_season(season)
     @game_teams_stats.group_by_coach(season)
     @game_teams_stats.coach_wins(season)
     @game_teams_stats.worst_coach(season)
   end
 
   def most_accurate_team(season)
-    @game_teams_stats.hash_of_seasons(season)
+    @game_teams_stats.games_from_season(season)
     @game_teams_stats.find_by_team_id(season)
     @game_teams_stats.goals_to_shots_ratio_per_season(season)
     @game_teams_stats.find_most_accurate_team(season)
@@ -110,7 +110,7 @@ class StatTracker
   end
 
   def least_accurate_team(season)
-    @game_teams_stats.hash_of_seasons(season)
+    @game_teams_stats.games_from_season(season)
     @game_teams_stats.find_by_team_id(season)
     @game_teams_stats.goals_to_shots_ratio_per_season(season)
     @game_teams_stats.find_least_accurate_team(season)
@@ -118,7 +118,7 @@ class StatTracker
   end
 
   def most_tackles(season)
-    @game_teams_stats.hash_of_seasons(season)
+    @game_teams_stats.games_from_season(season)
     @game_teams_stats.find_by_team_id(season)
     @game_teams_stats.total_tackles(season)
     @game_teams_stats.find_team_with_most_tackles(season)
@@ -126,7 +126,7 @@ class StatTracker
   end
 
   def fewest_tackles(season)
-    @game_teams_stats.hash_of_seasons(season)
+    @game_teams_stats.games_from_season(season)
     @game_teams_stats.find_by_team_id(season)
     @game_teams_stats.total_tackles(season)
     @game_teams_stats.find_team_with_fewest_tackles(season)

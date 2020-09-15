@@ -1,6 +1,10 @@
 require './lib/stats'
+require_relative 'groupable'
+
 
 class GameStats < Stats
+  include Groupable
+
   attr_reader :game_data,
               :tracker
 
