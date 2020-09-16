@@ -13,7 +13,7 @@ This project uses ruby to analayze hockey data from 2012 through 2018. We perfor
 <img src="https://github.com/Oxalisviolacea/futbol/blob/main/images/flow_chart.png" width="350" height="350">
 
 #### Methods
-<img src="https://github.com/Oxalisviolacea/futbol/blob/main/images/methods_chart.png" width="350" height="350">
+<img src="https://github.com/Oxalisviolacea/futbol/blob/main/images/methods_chart.png" width="350" height="500">
 
 #### Process
 Futbol was a collaborative project that was accomplished through a combination of remote pairing and independent work. We used an agile workflow with a github project board.  
