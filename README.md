@@ -22,9 +22,9 @@ The inputs were three .csv files. We used test-driven design create analysis met
 After ensuring our tests were adequately passing minitest, rspec, and simplecov, we refactored. We moved the analysis methods into four representative classes, introduced three modules, and implemented a Stats class for our four statistics classes to inherit from. The modules and inheritance helped cut down on repitition and increase organization. We also implemented stubs to increase the test speed.
 
 #### Test Coverage
-- minitest: %
-- simplecov: %
-- rspec: %
+- minitest: All tests passing
+- simplecov: 99.8%
+- rspec: 100%
 
 #### References
 - [project spec](https://backend.turing.io/module1/projects/futbol/)
