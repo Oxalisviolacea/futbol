@@ -10,6 +10,7 @@
 This project uses ruby to analayze hockey data from 2012 through 2018. We performed statistical on a large data set that included 7442 games played by 32 teams over the course of 6 seasons.
 
 #### Design
+<img src="https://github.com/Oxalisviolacea/futbol/blob/main/images/flow_chart.png" width="250" height="250">
 ![](https://github.com/Oxalisviolacea/futbol/blob/main/images/flow_chart.png =250x250)
 
 #### Methods
