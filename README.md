@@ -29,6 +29,6 @@ After ensuring our tests were adequately passing minitest, rspec, and simplecov,
 ### References
 - [project spec](https://backend.turing.io/module1/projects/futbol/)
 - [original respository](https://github.com/turingschool-examples/futbol)
-- [spec harnass](https://github.com/turingschool-examples/futbol_spec_harness)
+- [spec harness](https://github.com/turingschool-examples/futbol_spec_harness)
 - [ruby rake](https://github.com/ruby/rake)
 - [ruby simplecov](https://github.com/simplecov-ruby/simplecov)
